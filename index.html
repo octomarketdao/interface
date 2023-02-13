@@ -102,7 +102,7 @@ nav.navbar {
 	padding-top: 0;
 	padding-bottom: 0;
 	margin-bottom: -5px;
-	background-color:rgba(39,39,39,0.7);
+	background-color:rgba(0,3,41,0.8);
 }
 .btn.disabled, .btn:disabled { opacity: .2; }
 
@@ -111,7 +111,7 @@ body div.jumbotron {background-color: transparent !important;}
 .img-mirror {  -webkit-transform: scaleX(-1); transform: scaleX(-1);}
 
 .synthBk {
-	/* background-image: url('img/octomarket-synth-bk.jpg'); */
+	background-image: url('img/bk1.jpg');
 	background-repeat: no-repeat;
 	background-size:contain;
 	background-position: center bottom;
@@ -153,7 +153,7 @@ body div.jumbotron {background-color: transparent !important;}
     display: inline-block;
     position:relative;
     /* width:300px; height:300px;  */
-    width:90%;
+    width:85%;
     aspect-ratio: 1/1;
 }
 .svgClippedBack {
@@ -175,22 +175,22 @@ body div.jumbotron {background-color: transparent !important;}
 	/* background: #000329 url(img/mrd3.gif); */
     background-size: cover;
     opacity: 1;
-/* mix-blend-mode: normal; */
-/* mix-blend-mode: multiply; */
-/* mix-blend-mode: screen; */
-/* mix-blend-mode: overlay; */
-/* mix-blend-mode: darken; */
-/* mix-blend-mode: lighten; */
-			/* mix-blend-mode: color-dodge; */
-/* mix-blend-mode: color-burn; */
-		mix-blend-mode: hard-light;
-	/* mix-blend-mode: soft-light; */
-/* mix-blend-mode: difference; */
-/* mix-blend-mode: exclusion; */
-/* mix-blend-mode: hue; */
-/* mix-blend-mode: saturation; */
-	/* mix-blend-mode: color; */
-/* mix-blend-mode: luminosity;   */
+	/* mix-blend-mode: normal; */
+	/* mix-blend-mode: multiply; */
+	/* mix-blend-mode: screen; */
+	/* mix-blend-mode: overlay; */
+	/* mix-blend-mode: darken; */
+	/* mix-blend-mode: lighten; */
+				/* mix-blend-mode: color-dodge; */
+	/* mix-blend-mode: color-burn; */
+			mix-blend-mode: hard-light;
+		/* mix-blend-mode: soft-light; */
+	/* mix-blend-mode: difference; */
+	/* mix-blend-mode: exclusion; */
+	/* mix-blend-mode: hue; */
+	/* mix-blend-mode: saturation; */
+		/* mix-blend-mode: color; */
+	/* mix-blend-mode: luminosity;   */
 }
 
 .svgClippedFront {
@@ -198,14 +198,15 @@ body div.jumbotron {background-color: transparent !important;}
     top:0;left:0;
 	width: 100%; height: 100%;
     z-index: 4;
-    /* background: #ee496e; */
-    background: #5bd5e6;
+    /* background: #000329; */
+    /* background: #1e5577; */
+    background: #063453;
+    /* background: #5bd5e6; */
 	-webkit-clip-path: url(#svgLogoClipPathFront1);
 	clip-path: url(#svgLogoClipPathFront1);
 }
 
 .imggallery {
-	display:none;
   position: absolute;
   width:100%; height:100%;
   /* background-color: #FFCD62; */
@@ -306,12 +307,12 @@ body div.jumbotron {background-color: transparent !important;}
                     <div class="svgClippedBack">
                         <div class="svgClippedFront"></div>
                         <div class="svgClippedContent">
-                            <!-- <div class="imggallery hidden">
+                            <div class="imggallery hidden">
                                 <span><img src="/img/nft-slide01.gif"></span>
                                 <span><img src="/img/nft-slide02.gif"></span>
                                 <span><img src="/img/nft-slide03.gif"></span>
                                 <span><img src="/img/nft-slide04.gif"></span>
-                            </div> -->
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -326,17 +327,17 @@ body div.jumbotron {background-color: transparent !important;}
 <div class="container">
 	<div class="row mt-5 text-center text-justify">
 		<div class="col-md-4">
-			<div class="explainer"><img src="/img/explainer01.png" class="img-fluid"></div>
+			<div class="explainer"><img src="img/explainer01.png" class="img-fluid"></div>
 			<h3 class="coolHeadline textOrange">Price Pegged</h3>
 			<p>Synthetic Fungible Tokens are like stable coins which are pegged to a Collections floor price. So the price of BoredApeSFT on Uniswap is pegged to the Bored Ape floor price on OpenSea.</p>
 		</div>
 		<div class="col-md-4">
-			<div class="explainer"><img src="/img/explainer02.png" class="img-fluid"></div>
+			<div class="explainer"><img src="img/explainer02.png" class="img-fluid"></div>
 			<h3 class="coolHeadline textOrange">Omni-Chain</h3>
 			<p>OctoMarkets SFTs are omni-chain, you can transfer them between 20 blockchains without a bridge. You can trade your Ethereum BoredApeSFT on BSC.</p>
 		</div>
 		<div class="col-md-4">
-			<div class="explainer"><img src="/img/explainer03.png" class="img-fluid"></div>
+			<div class="explainer"><img src="img/explainer03.png" class="img-fluid"></div>
 			<h3 class="coolHeadline textOrange">Extemely Fungible</h3>
 			<p>You can trade SFTs on our DEX to earn max yield rewards, but you can also trade SFTs on other DEXs such as Uniswap, PancakeSwap, SushiSwap, etc.</p>
 		</div>
@@ -365,7 +366,7 @@ body div.jumbotron {background-color: transparent !important;}
 				</defs>
 				<clipPath id="shape">
 					<path id="blob" fill="url(#gradient)">
-						<animate attributeName="d" dur="10000ms" repeatCount="indefinite"
+						<animate attributeName="d" dur="7000ms" repeatCount="indefinite"
 							values="M440.5,320.5Q418,391,355.5,442.5Q293,494,226,450.5Q159,407,99,367Q39,327,31.5,247.5Q24,168,89,125.5Q154,83,219.5,68Q285,53,335.5,94.5Q386,136,424.5,193Q463,250,440.5,320.5Z;M453.78747,319.98894Q416.97789,389.97789,353.96683,436.87838Q290.95577,483.77887,223.95577,447.43366Q156.95577,411.08845,105.64373,365.97789Q54.33169,320.86732,62.67444,252.61056Q71.01719,184.3538,113.01965,135.21007Q155.02211,86.06634,220.52211,66.46683Q286.02211,46.86732,335.5,91.94472Q384.97789,137.02211,437.78747,193.51106Q490.59704,250,453.78747,319.98894Z;M411.39826,313.90633Q402.59677,377.81265,342.92059,407.63957Q283.24442,437.46649,215.13648,432.5428Q147.02853,427.61911,82.23325,380.9572Q17.43796,334.29529,20.45223,250.83809Q23.46649,167.38089,82.5856,115.05707Q141.70471,62.73325,212.19045,63.73015Q282.67618,64.72705,352.67308,84.79839Q422.66998,104.86972,421.43486,177.43486Q420.19974,250,411.39826,313.90633Z;M440.5,320.5Q418,391,355.5,442.5Q293,494,226,450.5Q159,407,99,367Q39,327,31.5,247.5Q24,168,89,125.5Q154,83,219.5,68Q285,53,335.5,94.5Q386,136,424.5,193Q463,250,440.5,320.5Z;">
 						</animate>
 					</path>
@@ -373,7 +374,7 @@ body div.jumbotron {background-color: transparent !important;}
 			</svg>
 		</div>
 		<div class="col col-12 col-md-6">
-			<h2 class="biggy biggyGreen display-1">Fungible Liquid NFTs</h2><br>
+			<h2 class="biggy biggyPurple display-1">Fungible Liquid NFTs</h2><br>
 			<h5 class="font-weight-light text-justify lineHeightReset">
 				<p>OctoMarket is a smart contract based protocol which creates synthetic derivatives of top NFTs called Synthetic-Fungible Tokens. You can think of them as NFT stable-coins. SFTs are pegged to the floor price of their collection, so a single BoredApeSFT is worth the floor price of the Bored Ape collection.</p>
 
@@ -452,7 +453,7 @@ body div.jumbotron {background-color: transparent !important;}
 		<div class="-col-12 col-lg-8">
 			<div class="text-center -mb-5">
 				<h2 class="headlineThin">Team</h2>
-				<p>OctoMarket is a totally decentralized, non-custodial, open source project which is operated by OctoMarket DAO of the same ethic. We are a group of developers, collectors, art geeks, and DeFi veterans. If you would like to join us please provide a link to your Github and any other info.
+				<p>OctoMarket is a totally decentralized, non-custodial, open source project which is operated by OctoMarket DAO of the same ethic. If you would like to join us please provide a link to your Github and any other info.
 				</p>
 				<p><a class="btn btn-outline-light btn-md" href="https://forms.gle/eTpWjxJJsdAmXaQ39"
 						target="_blank">Open Form</a></p>
