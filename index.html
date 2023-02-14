@@ -36,237 +36,14 @@
 	<link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
 	<!-- <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,300;1,400;1,700&display=swap" rel="stylesheet">  -->
+	<!-- https://www.cryptofonts.com/icons.html -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/monzanifabio/cryptofont/cryptofont.css">
+
+	<link rel="stylesheet" href="/src/styles.css">
 
 
 <style>
 	
- @media (max-width: 1200px) {legend {font-size: calc(1.275rem + 0.3vw);}h1, .h1 {font-size: calc(1.375rem + 1.5vw);}h2, .h2 {font-size: calc(1.325rem + 0.9vw);}h3, .h3 {font-size: calc(1.3rem + 0.6vw);}h4, .h4 {font-size: calc(1.275rem + 0.3vw);}.display-1 {font-size: calc(1.725rem + 5.7vw);}.display-2 {font-size: calc(1.675rem + 5.1vw);}.display-3 {font-size: calc(1.575rem + 3.9vw);}.display-4 {font-size: calc(1.475rem + 2.7vw);}.close {font-size: calc(1.275rem + 0.3vw);}}
-
-.cyberColors{
-	background-color: #000329; /*was 000329 */
-	color:#d8f8ff;
-    color:#5bd5e6; /*purple - core accent*/
-    color:#1e5577; /*subcore*/
-    color:#ee496e; /*orange*/
-    color:#FFCD62; /*yellow*/
-    color:#49EE78; /*green*/
-}
-html {
-	scroll-behavior: smooth;
-}
-body {
-	font-family: 'Exo 2', sans-serif;
-	background-color: #000329;
-	color:#d8f8ff;
-}
-
-.biggy{
-	font-weight: 600;
-	font-style: italic;
-	font-family: 'Roboto Condensed', sans-serif;
-	color: rgba(0,0,0,0);
-	-webkit-text-fill-color: none; 
-	-webkit-text-stroke-width: 2px;
-	/* -webkit-text-stroke-color: #5bd5e6; */
-}
-.textWhite {color:#d8f8ff;}
-.textPurple {color:#5bd5e6!important;}
-.textGreen {color:#49EE78!important;}
-.textOrange {color:#ee496e;}
-.textYellow {color:#FFCD62;}
-.biggyPurple {-webkit-text-stroke-color: #5bd5e6;}
-.biggyGreen {-webkit-text-stroke-color: #49EE78;}
-.biggyOrange {-webkit-text-stroke-color: #ee496e;}
-.biggyYellow {-webkit-text-stroke-color: #FFCD62;}
-/*a:link, a:visited { color:#d8f8ff; text-decoration: underline; }*/
-a:hover { color:#5bd5e6;  }
-a:hover.btn { 
-    background-color: #1e5577;
-	border-color: #1e5577;
-	color:#d8f8ff;
-}
-
-.lineHeightReset {
-    line-height: 1.5 !important;
-}
-.hidden {display:none;}
-.headlineThin {font-weight: 200;}
-.explainer img {
-	max-width:80px;
-	margin-bottom:1em;
-}
-.imageui { 
-	max-width: 660px;
-	border: 1px solid #1e5577;
-}
-
-footer { padding:1em 0; }
-footer .footerlogo {max-height:15px;}
-nav .navbar-brand { 
-	font-size:2em;
-	font-weight: 300;
-	font-style: italic;
-	color:#d8f8ff;
-}
-nav.navbar {
-	padding-top: 0;
-	padding-bottom: 0;
-	margin-bottom: -5px;
-	background-color:rgba(0,3,41,0.8);
-}
-.btn.disabled, .btn:disabled { opacity: .2; }
-
-body div.jumbotron {background-color: transparent !important;}
-.coolHeadline { font-style: italic; }
-.img-mirror {  -webkit-transform: scaleX(-1); transform: scaleX(-1);}
-
-.synthBk {
-	background-image: url('img/bk1.jpg');
-	background-repeat: no-repeat;
-	background-size:contain;
-	background-position: center bottom;
-}
-.bkwave{
-	/* background-image: url('img/bkwave2.jpg'); */
-	background-repeat: no-repeat;
-	background-size:contain;
-	background-position: center top;
-}
-/*small*/
-@media (max-width: 768px) {
-	body main div.synthBk { 
-		background-position: left center;
-		background-size:cover;
-	}
-}
-/* Extra large screen */
-@media (min-width: 2450px) {  
-	body main div.synthBk { 
-		background-size:cover;
-	}   
-}
-
-/* https://yoksel.github.io/relative-clip-path/ */
-/* https://yoksel.github.io/url-encoder/ */
-.svgLogoHide {
-	position: absolute;
-	width: 0;
-	height: 0;
-}
-.svgClippedHolder{
-    display: inline-block;
-    position:relative;
-    /* width:300px; height:300px;  */
-    width:85%;
-    aspect-ratio: 1/1;
-}
-.svgClippedBack {
-    position: absolute;
-    top:0;left:0;
-	width: 100%; height: 100%;
-    z-index: 2;
-	background: #5bd5e6;
-	-webkit-clip-path: url(#svgLogoClipPath3);
-	clip-path: url(#svgLogoClipPath3);
-} 
-.svgClippedContent {
-	position: absolute;
-    top:0;left:0;
-    width:100%; height:100%;
-    z-index: 3;
-	background: #5bd5e6 url(img/mrd5.gif);
-	/* background: #000329 url(img/mrd3.gif); */
-    background-size: cover;
-    opacity: 1;
-	/* mix-blend-mode: normal; */
-	/* mix-blend-mode: multiply; */
-	/* mix-blend-mode: screen; */
-	/* mix-blend-mode: overlay; */
-	/* mix-blend-mode: darken; */
-	/* mix-blend-mode: lighten; */
-				/* mix-blend-mode: color-dodge; */
-	/* mix-blend-mode: color-burn; */
-			mix-blend-mode: hard-light;
-		/* mix-blend-mode: soft-light; */
-	/* mix-blend-mode: difference; */
-	/* mix-blend-mode: exclusion; */
-	/* mix-blend-mode: hue; */
-	/* mix-blend-mode: saturation; */
-		/* mix-blend-mode: color; */
-	/* mix-blend-mode: luminosity;   */
-}
-
-.svgClippedFront {
-    position: absolute;
-    top:0;left:0;
-	width: 100%; height: 100%;
-    z-index: 4;
-	opacity: 0.8;
-    background: #000329;
-    /* background: #1e5577; */
-    /* background: #063453; */
-	-webkit-clip-path: url(#svgLogoClipPathFront1);
-	clip-path: url(#svgLogoClipPathFront1);
-}
-
-.imggallery {
-  position: absolute;
-  width:100%; height:100%;
-  /* background-color: #FFCD62; */
-  overflow: hidden;
-  opacity: 0.8;
-/* mix-blend-mode: normal; */
-/* mix-blend-mode: multiply; */
-/* mix-blend-mode: screen; */
-/* mix-blend-mode: overlay; */
-/* mix-blend-mode: darken; */
-/* mix-blend-mode: lighten; */
-			mix-blend-mode: color-dodge;
-/* mix-blend-mode: color-burn; */
-		/* mix-blend-mode: hard-light; */
-	/* mix-blend-mode: soft-light; */
-/* mix-blend-mode: difference; */
-/* mix-blend-mode: exclusion; */
-/* mix-blend-mode: hue; */
-/* mix-blend-mode: saturation; */
-	/* mix-blend-mode: color; */
-/* mix-blend-mode: luminosity;   */
-}
-.imggallery span {
-    position: absolute;
-    left:0; top:0;
-    width:100%;
-    height:100%;
-}
-.imggallery span img {
-    width:100%;
-    height:100%;
-	filter: grayscale(80%);
-}
-.imggallery span:nth-child(4) {
-  animation: xfade 16s 0s infinite;
-}
-.imggallery span:nth-child(3) {
-  animation: xfade 16s 4s infinite;
-}
-.imggallery span:nth-child(2) {
-  animation: xfade 16s 8s infinite;
-}
-.imggallery span:nth-child(1) {
-  animation: xfade 16s 12s infinite;
-}
-@keyframes xfade{
-  17% {
-    opacity:1;
-  }
-  25% {
-    opacity:0;
-  }
-  92% {
-    opacity:0;
-  }
-}
-
 </style>
 </head>
 <body>
@@ -310,12 +87,12 @@ body div.jumbotron {background-color: transparent !important;}
                     <div class="svgClippedBack">
                         <div class="svgClippedFront"></div>
                         <div class="svgClippedContent">
-                            <div class="imggallery hidden">
+                            <!-- <div class="imggallery hidden">
                                 <span><img src="/img/nft-slide01.gif"></span>
                                 <span><img src="/img/nft-slide02.gif"></span>
                                 <span><img src="/img/nft-slide03.gif"></span>
                                 <span><img src="/img/nft-slide04.gif"></span>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
@@ -332,17 +109,17 @@ body div.jumbotron {background-color: transparent !important;}
 		<div class="col-md-4">
 			<div class="explainer"><img src="img/explainer01.png" class="img-fluid"></div>
 			<h3 class="coolHeadline textOrange">Price Pegged</h3>
-			<p>Synthetic Fungible Tokens are like stable coins which are pegged to a Collections floor price. So the price of BoredApeSFT on Uniswap is pegged to the Bored Ape floor price on OpenSea.</p>
+			<p>Synth NFTs are ERC20s which are pegged to a Collections floor price like a stable-coin.</p>
 		</div>
 		<div class="col-md-4">
 			<div class="explainer"><img src="img/explainer02.png" class="img-fluid"></div>
-			<h3 class="coolHeadline textOrange">Omni-Chain</h3>
-			<p>OctoMarkets SFTs are omni-chain, you can transfer them between 20 blockchains without a bridge. You can trade your Ethereum BoredApeSFT on BSC.</p>
+			<h3 class="coolHeadline textOrange">OmniChain</h3>
+			<p>OctoMarkets Synth NFTs are omnichain, transferable between chains without a bridge.</p>
 		</div>
 		<div class="col-md-4">
 			<div class="explainer"><img src="img/explainer03.png" class="img-fluid"></div>
 			<h3 class="coolHeadline textOrange">Extemely Fungible</h3>
-			<p>You can trade SFTs on our DEX to earn max yield rewards, but you can also trade SFTs on other DEXs such as Uniswap, PancakeSwap, SushiSwap, etc.</p>
+			<p>You can long/short Synth NFTs on our DEX or trade on any DEX like Uniswap or PancakeSwap.</p>
 		</div>
 	</div>
 </div>
@@ -353,7 +130,7 @@ body div.jumbotron {background-color: transparent !important;}
 <div class="container">
 
 	<div class="row my-5 justify-content-center">
-		<div class="col align-self-center text-center justify-content-middle">
+		<div class="col align-self-center text-center justify-content-middle d-none d-xs-none d-sm-none d-md-block">
 
 			<!-- https://blobanimation.com/ -->
 			<svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" id="blobSvg"
@@ -377,48 +154,63 @@ body div.jumbotron {background-color: transparent !important;}
 			</svg>
 		</div>
 		<div class="col col-12 col-md-6">
-			<h2 class="biggy biggyPurple display-1">Fungible Liquid NFTs</h2><br>
+			<h2 class="biggy biggyPurple display-1">A Synthetic NFT Protocol</h2><br>
 			<h5 class="font-weight-light text-justify lineHeightReset">
-				<p>OctoMarket is a smart contract based protocol which creates synthetic derivatives of top NFTs called Synthetic-Fungible Tokens. SFTs are pegged to the floor price of their collection like an NFT stable-coin.</p>
+				<p>OctoMarket is a protocol which creates synthetic derivatives of NFTs, sort of like an NFT stable-coin. Synth NFTs are pegged to the floor price of their collection and similar other Defi protocols like MakerDAO are over-collateralized. Synth NFTs are open and fungible like any other ERC20.</p>
 
-				<p>OctoMarket SFTs are also Omnichain. Using the Axelar Network they can be transfered between blockchain networks without any need for a bridge. You never need to buy the NFT to trade an SFT, and you can trade any amount.
-				</p>
+				<p>The peg of synth NFTs are secured by a smart contract based oracle in which community operated bots submit price data from whitelisted sources, and arb bots stabilize the price across markets. This unique decentralized architecture protects against oracle attacks.</p>
+
 			</h5>
 			<p><a class="btn btn-outline-light btn-md my-4" href="#whitelist">Join WhiteList &raquo;</a></p>
 		</div>
 	</div>
 
-<section id="dextrade" class="mb-5 mt-5">
-	<div class="container-fluid">
+<section id="dextrade" class="">
+	<div class="container-fluid ">
 		<div class="row justify-content-center">
-			<div class="-col-12 col-lg-8">
-				<div class="text-center mb-5">
-					<h1 class="headlineThin">Long or Short top NFTs</h1>
-					<p>The OctoMarket DEX brings the entire market of SFTs across all blockchains into one place.</p>
-					<!-- <p><a href="" target="_blank" class="textPurple">Join our Discord</a></p> -->
-				</div>
+			<div class="col-lg-10 text-center my-5">
+				<h1 class="headlineThin display-3 textOrange">Synth NFTs Are OmniChain</h1>
+				<h5 class="my-4 font-weight-light lineHeightReset">Synth NFTs minted with OctoMarket are OmniChain at the core and are seamlessly transferable between blockchains without the need for a bridge. OctoMarket currently supports the 18+ networks on <a href="https://axelar.network/" target="_blank">Axelar</a> and any open AMM or DEX on those chains.</h5>
+				<p class="blockchainLogos1 display-4 -textOrange">
+					<i class="cf cf-eth"></i>
+					<i class="cf cf-bnb"></i>
+					<i class="cf cf-avax"></i>
+					<i class="cf cf-apt"></i>
+					<i class="cf cf-matic"></i>
+					<i class="cf cf-op"></i>
+					<i class="cf cf-ftm"></i>
+					<i class="cf cf-glmr"></i>
+					<i class="cf cf-celo"></i>
+					<i class="cf cf-gno"></i>
+					<i class="cf cf-klay"></i>
+					<i class="cf cf-metis"></i>
+				</p>
+				<p class="blockchainLogos1 display-4 –textOrange">
+					<i class="cf cf-uni"></i>
+					<i class="cf cf-bal"></i>
+					<i class="cf cf-cake"></i>
+					<i class="cf cf-sushi"></i>
+					<i class="cf cf-1inch"></i>
+				</p>
 			</div>
-			<div class="col-12 text-center">
-				<img src="img/octomarket-ui-02.jpg" alt="OctoMarket DEX" class="img-fluid rounded imageui">
-			</div> <!-- col -->
 		</div> <!-- r -->
 	</div> <!-- container -->
 </section>
 
 <br>
 
-<section id="yieldfarm" class="hidden">
+<section id="dex" class="">
 	<div class="row my-5 justify-content-middle">
+		<div class="col-12 col-lg-6 align-self-center text-right justify-content-middle">
+			<img src="img/octomarket-ui-03.png" alt="OctoMarket DEX" class="img-fluid imageui">
+		</div> <!-- col -->
 		<div class="col-12 col-lg-6 my-2">
-			<h2 class="biggy biggyGreen display-1">Earn Yield Minting SFTs</h2><br>
+			<h2 class="biggy biggyGreen display-1">With a Synth NFT DEX</h2><br>
 			<h4 class="font-weight-light text-justify lineHeightReset">
-				<p>All Synthetic Fungible Tokens are backed by collateral supplied by the community, similar to other DeFi protocols like MakerDAO. You can earn rewards in several ways: by minting new SFTs, by supplying liquidity to an AMM, and we offer yield rewards for staking your LP tokens. </p>
+				<p>Synth NFTs can be traded on any DEX like Uniswap, but we also have a Decentralized Exchange which allows you to long or short Synth NFTs. Providing liquidity on the OctoMarket DEX also allows you to earn yield rewards.</p>
 			</h4>
 			<!-- <p><a class="btn btn-outline-light btn-md my-1" href="" target="_blank">More Info &raquo;</a></p> -->
 		</div>
-		<div class="col-12 col-lg-6 align-self-center text-right justify-content-middle">
-
-		</div> <!-- col -->
 	</div> <!-- r -->
 </section>
 
@@ -430,13 +222,13 @@ body div.jumbotron {background-color: transparent !important;}
 <div class="container">
 
 <section id="whitelist">
-<div class="row justify-content-middle my-5">
-	<div class="col col-12 col-lg-6">
+<div class="row justify-content-middle">
+	<div class="col col-12 col-lg-6 my-5">
 		<h2 class="biggy biggyYellow display-1">Join The WhiteList</h2><br>
-		<h5 class="font-weight-light text-justify lineHeightReset">
+		<h4 class="font-weight-light text-justify lineHeightReset">
 			<p>Private beta access of OctoMarket is only available to members of OctoMarketDAO. To be considered for membership and WhiteList please fill out the form.</p>
 			<p>Every month we airdrop OctoMarketDAO Membership NFTs to the top NFT holders, so please provide the ETH address where you hold your most NFTs.</p>
-		</h5>
+		</h4>
 		<p><a class="btn btn-outline-light btn-md my-4" href="https://forms.gle/eTpWjxJJsdAmXaQ39" target="_blank">Open Form in New Tab</a>
 		</p>
 	</div>
